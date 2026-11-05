@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio Muhammad Ali Narahansyah - Front-end Developer & Pelajar SMKN 20 Jakarta. Website portofolio modern, responsif, dan fungsional.">
+  <meta name="keywords"
+    content="Muhammad Ali Narahansyah, Portfolio, Front-end Developer, Web Development, SMKN 20 Jakarta, HTML, CSS, JavaScript, React">
+  <meta name="author" content="Muhammad Ali Narahansyah">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Muhammad Ali Narahansyah &mdash; Web Portfolio">
+  <meta property="og:description"
+    content="A journey of knowledge, Care & Impact. Portofolio Front-end Developer modern dan responsif.">
+  <meta property="og:type" content="website">
+
+  <title>Muhammad Ali Narahansyah &mdash; Portfolio</title>
+
+  <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Phosphor Icons CDN -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <!-- External Stylesheet (CSS Terpisah) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- External JavaScript (JS Terpisah) -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- 1. NAVBAR (Sticky & Glassmorphism) -->
+  <!-- ========================================================================= -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-logo" aria-label="Beranda Portfolio">
+        <span>Portfolio</span>
+        <span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav CTA & Mobile Menu Trigger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">
+          <span>Get in Touch</span>
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+
+        <!-- Hamburger Button Mobile -->
+        <button id="mobile-menu-btn" class="hamburger-btn" type="button" aria-label="Buka Menu Navigasi"
+          aria-expanded="false">
+          <i id="hamburger-icon" class="ph ph-list"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="#home" class="mobile-nav-link">
+            <span>Home</span>
+            <i class="ph ph-caret-right" style="color: var(--color-dusty);"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="mobile-nav-link">
+            <span>About</span>
+            <i class="ph ph-caret-right" style="color: var(--color-dusty);"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="mobile-nav-link">
+            <span>Skills</span>
+            <i class="ph ph-caret-right" style="color: var(--color-dusty);"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="mobile-nav-link">
+            <span>Projects</span>
+            <i class="ph ph-caret-right" style="color: var(--color-dusty);"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="mobile-nav-link">
+            <span>Contact</span>
+            <i class="ph ph-caret-right" style="color: var(--color-dusty);"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu-cta">
+        <a href="#contact" class="btn btn-primary mobile-nav-link" style="justify-content: center;">
+          <span>Get in Touch</span>
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO SECTION (Home) -->
+  <!-- ========================================================================= -->
+  <main>
+    <section id="home" class="hero-section">
+
+      <!-- Ambient Decorative Blur Spheres -->
+      <div class="ambient-glow-1"></div>
+      <div class="ambient-glow-2"></div>
+
+      <div class="container">
+        <div class="hero-wrapper">
+
+          <!-- Status Badge -->
+          <div class="reveal status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Front-End Developer &bull; SMKN 20 Jakarta</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="reveal delay-100 hero-title">
+            A journey of <span class="highlight">knowledge</span>, Care &amp; Impact.
+          </h1>
+
+          <!-- Short Description -->
+          <p class="reveal delay-200 hero-desc">
+            Membangun pengalaman web yang elegan, responsif, dan fungsional. Menggabungkan estetika visual yang modern
+            dengan kode yang bersih untuk menciptakan dampak nyata.
+          </p>
+
+          <!-- 2 Action Buttons -->
+          <div class="reveal delay-300 hero-buttons">
+            <!-- Button 1: Solid -->
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="ph ph-arrow-down"></i>
+            </a>
+
+            <!-- Button 2: Outline -->
+            <a href="#contact" class="btn btn-outline">
+              <span>Let's Talk</span>
+              <i class="ph ph-chat-circle-dots" style="color: var(--color-dusty);"></i>
+            </a>
+          </div>
+
+          <!-- Hero Tech Strip -->
+          <div class="reveal delay-400 hero-tech-strip">
+            <div class="hero-tech-item">
+              <i class="ph ph-code"></i>
+              <span>HTML5 &amp; CSS3</span>
+            </div>
+            <div class="hero-tech-item">
+              <i class="ph ph-file-js"></i>
+              <span>JavaScript (ES6+)</span>
+            </div>
+            <div class="hero-tech-item">
+              <i class="ph ph-atom"></i>
+              <span>React.js</span>
+            </div>
+            <div class="hero-tech-item">
+              <i class="ph ph-paint-brush"></i>
+              <span>Responsive UI/UX</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. ABOUT SECTION ("Who I am") -->
+    <!-- ========================================================================= -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="reveal section-header">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title">Who I am</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- About Content Grid -->
+        <div class="about-grid">
+
+          <!-- Photo Placeholder Card -->
+          <div class="reveal about-photo-wrapper">
+            <div class="about-photo-backdrop"></div>
+            <div class="about-photo-card">
+              <div class="about-photo-inner">
+                <img src="assets/profile.jpeg" alt="Foto Profil Muhammad Ali Narahansyah" loading="lazy">
+                <!-- Floating Glassmorphism Pill on Photo -->
+                <div class="photo-floating-pill">
+                  <div>
+                    <div class="pill-label">Status</div>
+                    <div class="pill-value">Pelajar &bull; SMKN 20 Jakarta</div>
+                  </div>
+                  <div class="pill-icon">
+                    <i class="ph ph-student"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description & Details -->
+          <div class="reveal delay-200 about-content">
+
+            <div>
+              <span class="about-badge">Front-end Enthusiast</span>
+              <h3 class="about-name">Muhammad Ali Narahansyah</h3>
+              <p class="about-role">Student &amp; Web Development Explorer</p>
+            </div>
+
+            <!-- Original Bio Paragraph -->
+            <p class="about-desc">
+              Saya adalah seorang pelajar SMKN 20 Jakarta yang memiliki minat di bidang Web Development. Saya senang
+              membangun website yang modern, responsif, dan menarik, serta terus mengembangkan kemampuan dalam HTML,
+              CSS, JavaScript, dan React. Saya juga tertarik mempelajari teknologi baru dan mengubah ide menjadi project
+              digital yang bermanfaat.
+            </p>
+
+            <!-- Key Highlights Mini Cards -->
+            <div class="about-features">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="ph ph-devices"></i>
+                </div>
+                <h4 class="feature-title">Responsive Design</h4>
+                <p class="feature-desc">Pengalaman optimal di desktop, tablet, maupun layar smartphone.</p>
+              </div>
+
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="ph ph-lightning"></i>
+                </div>
+                <h4 class="feature-title">Clean &amp; Modern Code</h4>
+                <p class="feature-desc">Penulisan kode yang rapi, terstruktur, dan berbasis standar web modern.</p>
+              </div>
+            </div>
+
+            <!-- Skills List -->
+            <div>
+              <p class="about-skills-title">Teknologi &amp; Keterampilan</p>
+              <div class="skills-tags">
+                <span class="skill-pill">HTML5 Semantik</span>
+                <span class="skill-pill">CSS3 Modern</span>
+                <span class="skill-pill">JavaScript (ES6+)</span>
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">UI/UX Design</span>
+                <span class="skill-pill">Flexbox &amp; CSS Grid</span>
+                <span class="skill-pill">Git &amp; GitHub</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. SKILLS SECTION ("Skills & Expertise") -->
+    <!-- ========================================================================= -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="reveal section-header">
+          <span class="section-tag">Proficiency &amp; Capabilities</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">
+            Tolok ukur penguasaan teknis dan etos kerja profesional yang terus saya kembangkan untuk menciptakan solusi
+            web modern, fungsional, dan bernilai tambah.
+          </p>
+        </div>
+
+        <!-- 2 Tab Buttons (Hard Skills vs Soft Skills) -->
+        <div class="reveal skills-tabs">
+          <button id="tab-hard-skill" class="skills-tab-btn active" type="button" aria-controls="panel-hard-skill"
+            aria-selected="true" data-tab="hard">
+            <i class="ph-bold ph-code"></i>
+            <span>Hard Skills</span>
+          </button>
+          <button id="tab-soft-skill" class="skills-tab-btn" type="button" aria-controls="panel-soft-skill"
+            aria-selected="false" data-tab="soft">
+            <i class="ph-bold ph-heart"></i>
+            <span>Soft Skills</span>
+          </button>
+        </div>
+
+        <!-- TAB 1: Hard Skills Panel -->
+        <div id="panel-hard-skill" class="skills-tab-panel active" role="tabpanel" aria-labelledby="tab-hard-skill">
+          <div class="skills-grid">
+
+            <!-- HTML5 -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-file-html"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">HTML5 &amp; Semantic Web</h3>
+                    <p class="skill-category">Semantic Layout, SEO &amp; Accessibility</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="75%"></div>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-file-css"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">CSS3 &amp; Modern Styling</h3>
+                    <p class="skill-category">Flexbox, CSS Grid &amp; Smooth Animations</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="50%"></div>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-file-js"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">JavaScript (ES6+)</h3>
+                    <p class="skill-category">DOM Manipulation, Events &amp; Logic</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="50%"></div>
+              </div>
+            </div>
+
+            <!-- React.js -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-atom"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">React.js</h3>
+                    <p class="skill-category">Reusable Components, State &amp; Hooks</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">40%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="40%"></div>
+              </div>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-paint-brush-broad"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Tailwind CSS</h3>
+                    <p class="skill-category">Utility-First &amp; Speed Prototyping</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">60%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="60%"></div>
+              </div>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-git-branch"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Git &amp; GitHub</h3>
+                    <p class="skill-category">Version Control, Branching &amp; Deploy</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">65%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="65%"></div>
+              </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-devices"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Responsive Web Design</h3>
+                    <p class="skill-category">Mobile-First &amp; Cross-Platform Adaptability</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="70%"></div>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-bezier-curve"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">UI/UX Design &amp; Layouting</h3>
+                    <p class="skill-category">Visual Hierarchy, Glassmorphism &amp; Usability</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="75%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TAB 2: Soft Skills Panel -->
+        <div id="panel-soft-skill" class="skills-tab-panel" role="tabpanel" aria-labelledby="tab-soft-skill">
+          <div class="skills-grid">
+
+            <!-- Disiplin & Waktu -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-clock-countdown"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Disiplin &amp; Manajemen Waktu</h3>
+                    <p class="skill-category">Ketepatan waktu, fokus dan kepatuhan deadline</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="85%"></div>
+              </div>
+            </div>
+
+            <!-- Tanggung Jawab -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-shield-check"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Tanggung Jawab &amp; Integritas</h3>
+                    <p class="skill-category">Komitmen tinggi menyelesaikan tugas hingga tuntas</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">87%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="87%"></div>
+              </div>
+            </div>
+
+            <!-- Konsistensi -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-trend-up"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Konsistensi &amp; Kemauan Belajar</h3>
+                    <p class="skill-category">Semangat kontinu mengeksplorasi teknologi baru</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="85%"></div>
+              </div>
+            </div>
+
+            <!-- Komunikasi & Kolaborasi -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-users-three"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Komunikasi &amp; Kerjasama Tim</h3>
+                    <p class="skill-category">Kolaboratif, aktif berdiskusi &amp; saling mendukung</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="88%"></div>
+              </div>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-lightbulb"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Problem Solving &amp; Berpikir Kritis</h3>
+                    <p class="skill-category">Kemampuan menganalisis bug dan mencari solusi efektif</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">60%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="60%"></div>
+              </div>
+            </div>
+
+            <!-- Adaptabilitas -->
+            <div class="reveal skill-card">
+              <div class="skill-card-header">
+                <div class="skill-meta">
+                  <div class="skill-icon-box">
+                    <i class="ph-bold ph-arrows-clockwise"></i>
+                  </div>
+                  <div>
+                    <h3 class="skill-name">Adaptabilitas &amp; Fleksibilitas</h3>
+                    <p class="skill-category">Cepat menyesuaikan diri dengan tools &amp; alur kerja tim</p>
+                  </div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" data-progress="75%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. PROJECTS SECTION ("Featured Works") -->
+    <!-- ========================================================================= -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="reveal section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Works</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">
+            Karya dan proyek terpilih yang mengilustrasikan dedikasi terhadap desain visual estetis serta performa web
+            yang responsif.
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Website Selarasa -->
+          <article class="reveal project-card">
+            <div>
+              <!-- Card Image Box with Hover Zoom -->
+              <div class="project-image-box">
+                <img src="assets/selarasa.png" alt="Tampilan Antarmuka Website Selarasa - Platform Kuliner"
+                  loading="lazy">
+                <span class="project-category-badge">Culinary &amp; Food Web</span>
+              </div>
+
+              <!-- Card Content -->
+              <div class="project-body">
+                <h3 class="project-title">Website Selarasa</h3>
+                <p class="project-desc">
+                  Sebuah website bertema kuliner yang menyajikan ragam cita rasa hidangan istimewa dengan tata letak
+                  visual menggugah selera, navigasi yang intuitif, dan responsif di seluruh perangkat.
+                </p>
+
+                <!-- Tech Tags -->
+                <div class="project-tech-tags">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action Footer -->
+            <div class="project-footer">
+              <a href="https://rasaaa.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                aria-label="Kunjungi Website Selarasa (buka di tab baru)">
+                <span>Visit Live Website</span>
+                <i class="ph ph-arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Bank Nusantara Syariah -->
+          <article class="reveal delay-200 project-card">
+            <div>
+              <!-- Card Image Box with Hover Zoom -->
+              <div class="project-image-box">
+                <img src="assets/bank-nusantara.png"
+                  alt="Tampilan Antarmuka Bank Nusantara Syariah - Platform Perbankan Digital" loading="lazy">
+                <span class="project-category-badge">Banking &amp; FinTech</span>
+              </div>
+
+              <!-- Card Content -->
+              <div class="project-body">
+                <h3 class="project-title">Bank Nusantara Syariah</h3>
+                <p class="project-desc">
+                  Platform perbankan digital syariah modern dengan penekanan pada transparansi, keamanan transaksi
+                  finansial, kemudahan akses informasi produk perbankan, dan antarmuka ramah pengguna.
+                </p>
+
+                <!-- Tech Tags -->
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Web App</span>
+                  <span class="tech-tag">Modern UI</span>
+                  <span class="tech-tag">Finance UX</span>
+                  <span class="tech-tag">Interactivity</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Action Footer -->
+            <div class="project-footer">
+              <a href="https://bank-nusantara-syariah-25.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary" aria-label="Kunjungi Bank Nusantara Syariah (buka di tab baru)">
+                <span>Visit Live Website</span>
+                <i class="ph ph-arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: TALOG20 v2 -->
+          <article class="reveal delay-400 project-card">
+            <div>
+              <div class="project-image-box">
+                <img src="assets/image.png" alt="Logo TALOG20" loading="lazy">
+                <span class="project-category-badge">Education Web App</span>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title">TALOG20 v2</h3>
+                <p class="project-desc">
+                  Aplikasi web SMKN 20 Jakarta untuk mengelola Tugas Akhir siswa, memantau progress, mengelola penilaian,
+                  dan mengunduh rekap nilai dalam format Excel.
+                </p>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Web App</span>
+                  <span class="tech-tag">Student Monitoring</span>
+                  <span class="tech-tag">Assessment</span>
+                  <span class="tech-tag">Excel Export</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/DYoures/talogsmkn20" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary" aria-label="Lihat source code TALOG20 di GitHub (buka di tab baru)">
+                <span>View on GitHub</span>
+                <i class="ph ph-arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 5. CONTACT SECTION & FOOTER (Midnight Blue Background) -->
+  <!-- ========================================================================= -->
+  <footer id="contact" class="contact-footer-wrapper">
+
+    <!-- Ambient Glow Effect -->
+    <div class="contact-ambient-glow"></div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+
+      <!-- Contact CTA Box -->
+      <div class="reveal contact-cta-card">
+
+        <span class="contact-tag">Get in Touch</span>
+
+        <h2 class="contact-title">
+          Ready to make an impact?
+        </h2>
+
+        <p class="contact-desc">
+          Mari berkolaborasi membangun proyek website yang bermakna dan inovatif. Jangan ragu untuk menyapa atau
+          mendiskusikan peluang kerja sama!
+        </p>
+
+        <!-- Main WhatsApp CTA Button -->
+        <a href="https://wa.me/6287744231910" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+          aria-label="Hubungi Muhammad Ali Narahansyah via WhatsApp">
+          <i class="ph-bold ph-whatsapp-logo"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <!-- Additional Contact Note -->
+        <div class="contact-note">
+          <i class="ph ph-chat-teardrop"></i>
+          <span>Respon cepat untuk kolaborasi dan diskusi proyek</span>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Info & Social Links -->
+      <div class="footer-bottom">
+
+        <!-- Brand Identity -->
+        <div class="footer-brand">
+          <div class="brand-name">
+            Portfolio<span style="color: var(--color-dusty);">.</span>
+          </div>
+          <div class="brand-sub">
+            Muhammad Ali Narahansyah &bull; SMKN 20 Jakarta
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/muhammad-ali-7baba7399?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Profil LinkedIn Muhammad Ali">
+            <i class="ph ph-linkedin-logo"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/alihansss325" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Profil GitHub alihansss325">
+            <i class="ph ph-github-logo"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/alinarahans?igsi=c2ZmcGN1cTJ3b3hh" target="_blank"
+            rel="noopener noreferrer" class="social-btn" aria-label="Profil Instagram alinarahans">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+        </div>
+
+        <!-- Copyright Info -->
+        <div class="footer-copy">
+          <p>&copy; 2026 Muhammad Ali Narahansyah.</p>
+          <p>All rights reserved.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <a href="#home" id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">
+      <i class="ph-bold ph-arrow-up"></i>
+    </a>
+  </footer>
+
+</body>
+
+</html>
